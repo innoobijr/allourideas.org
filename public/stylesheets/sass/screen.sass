@@ -447,31 +447,44 @@ p.add-idea
 .navbar-aoi
   .btn-navbar
     float: right
+  .navbar-brand, .navbar-nav > li > a
+    text-shadow: none !important
   .navbar-inner
     // remove rounded corners
     -webkit-border-radius: 0
     -moz-border-radius: 0
+    box-shadow: none
     border-radius: 0
+    border-color: #FFFFFF
     // modify background color
-    background-color: #333333
-    background-image: -moz-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: -ms-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3d3d3d), to(#2c2c2c))
-    background-image: -webkit-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: -o-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-repeat: repeat-x
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#2c2c2c', GradientType=0)
-
+    background-color: #FFFFFF
+    //background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF)
+    //background-image: -ms-linear-gradient(top, #FFFFFF, #FFFFFF)
+    //background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#FFFFFF))
+    //background-image: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF)
+    //background-image: -o-linear-gradient(top, #FFFFFF, #FFFFFF)
+    background-image: none
+    //linear-gradient(top, #FFFFFF, #FFFFFF)
+    //background-repeat: repeat-x
+    //filter: progid:dximagetransform.microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=0)
+  .nv  .active
+    background-color: white
+    background-image: none
+    text-shadow: none
   .nav .active > a, .nav .active > a:hover, .nav .active > a:focus
-    background-color: transparent
+    background-color: white
+    background-image: none
+    background-repeat: no-repeat
+    filter: none
     //padding: 5px 10px 7px
     //line-height: 18px
-    //color: #999999
+    text-shadow: none
+    color: #C5BCDA
   .nav > li > a, .nav-collapse .dropdown-menu a
-    color: #999999
+    color: #C5BCDA
+    text-shadow: none
   .nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover
-    color: #F2F2F2
+    color: #4C3284
 @media (max-width: 767px)
   .navbar-aoi
     margin-left: -20px
@@ -601,6 +614,11 @@ p.add-idea
     margin-right: auto
   .headline-buttons
     margin-top: 2em
+
+.btn-success, .btn-success:hover, .btn-success.active
+  background-color: #4C3284
+  background-image: none
+  text-shadow: none 
 
 .descriptions
   h3
