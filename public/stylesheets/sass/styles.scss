@@ -195,7 +195,6 @@ form#new_question_form{
   vertical-align: middle;
   min-height: 8em;  // This should be the maximun height (number of lines) 140 chars will wrap to in our sizes
   width:100%;
-  
   @media (max-width: 480px) {
     font-size: 16px;
   }

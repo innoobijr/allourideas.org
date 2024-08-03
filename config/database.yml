@@ -3,16 +3,12 @@
 
 development: &default
   adapter: mysql2
-  user: root
   database: allourideas_development
   pool: 5
   timeout: 5000
-
-#development: &default
-#  adapter: sqlite3
-#  database: db/development.sqlite3
-#  pool: 5
-#  timeout: 5000
+  username: root
+  password: password
+  host: mysql.allourideas-apps.svc.cluster.local
 
 test: &TEST
   adapter: sqlite3
