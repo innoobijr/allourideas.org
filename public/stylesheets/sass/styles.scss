@@ -376,8 +376,14 @@ ul.footer-social-icons {
     }
 }
 .navbar .brand {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+a img {
+  width: 40%;
 }
 .powered-by {
     text-indent: -9999px;
