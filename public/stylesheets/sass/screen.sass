@@ -444,6 +444,12 @@ p.add-idea
   .rightside .flag
     text-align: left
 
+.navbar-inverse .navbar-inner
+  border-width: 0
+  box-shadow: none
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+
 .navbar-aoi
   .btn-navbar
     float: right
@@ -454,24 +460,21 @@ p.add-idea
     border-radius: 0
     // modify background color
     background-color: #333333
-    background-image: -moz-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: -ms-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3d3d3d), to(#2c2c2c))
-    background-image: -webkit-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: -o-linear-gradient(top, #3d3d3d, #2c2c2c)
-    background-image: linear-gradient(top, #3d3d3d, #2c2c2c)
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff)
+    background-image: -ms-linear-gradient(top, #ffffff, #ffffff)
+    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff)
+    background-image: -o-linear-gradient(top, #ffffff, #ffffff)
+    background-image: linear-gradient(top, #ffffff, #ffffff)
     background-repeat: repeat-x
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#2c2c2c', GradientType=0)
-
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0)
+  .nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover
+    color:  #C5BCDA
   .nav .active > a, .nav .active > a:hover, .nav .active > a:focus
-    background-color: transparent
+    background-color: #4C3284
     //padding: 5px 10px 7px
     //line-height: 18px
-    //color: #999999
   .nav > li > a, .nav-collapse .dropdown-menu a
-    color: #999999
-  .nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover
-    color: #F2F2F2
+    color: #C5BCDA
 @media (max-width: 767px)
   .navbar-aoi
     margin-left: -20px
@@ -586,10 +589,26 @@ p.add-idea
 .data-vis-header
   padding-left: 15px
 
+.btn-success
+  color: #fff
+  background-color: #4C3284
+  background-image: -moz-linear-gradient(top, #4C3284, #4C3284)
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4C3284), to(#4C3284))
+  background-image: -webkit-linear-gradient(top, #4C3284, #4C3284)
+  background-image: -o-linear-gradient(top, #4C3284, #4C3284)
+  background-image: linear-gradient(to bottom, #4C3284,#4C3284)
+  background-repeat: repeat-x
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF62C462', endColorstr='#FF51A351', GradientType=0)
+  border-color: #4C3284 #4C3284 #387038
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25)
+  background-color: #4C3284
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+
 .aoi-hero-unit
   text-align: center
   .headline
-    font-weight: 200
+    font-weight: 500
+    color: #4C3284
     margin: 1.5em 0 .5em
   .sub-headline
     font-size: 20px
@@ -601,7 +620,8 @@ p.add-idea
     margin-right: auto
   .headline-buttons
     margin-top: 2em
-
+    a.btn.btn-large.btn-success
+      background-color: #4C3284
 .descriptions
   h3
     margin-bottom: 0
