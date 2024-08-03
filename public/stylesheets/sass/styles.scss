@@ -1,6 +1,6 @@
 $navbarCollapseWidth: 767px; // Overide width that the menu collapses at
 $aoi_lightblue: #58B0E2; // Light blue from Logo
-$aoi_blue: #367BBE;      // Blue from Logo
+$aoi_blue: #4C3284;      // Blue from Logo
 $aoi_alt-bg: #eeeeee;
 
 @import "bootstrap/bootstrap";
@@ -187,10 +187,30 @@ form#new_question_form{
   clear: both;
 }
 
+.btn-primary {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #4C3284;
+  background-image: -moz-linear-gradient(top, #4C3284, #4C3284);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4C3284), to(#4C3284));
+  background-image: -webkit-linear-gradient(top, #4C3284, #4C3284);
+  background-image: -o-linear-gradient(top, #4C3284, #4C3284);
+  background-image: linear-gradient(to bottom, #4C3284,#4C3284);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C3284', endColorstr='#4C3284', GradientType=0);
+  border-color: #4C3284;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+  color: #fff;
+  background-color: #4C3284;
+}
+
 .btn-vote{  // The main left/right vote buttons
-  @extend .btn-primary;  // Extend Primary Button from Bootstrap
-  @extend .btn-large;  // Extend Large Button from Bootstrap
-  
+  //@extend .btn-primary;  // Extend Primary Button from Bootstrap
+  //@extend .btn-large;  // Extend Large Button from Bootstrap
   display: table-cell;  // Allows us to use vertical-align to centre the text
   vertical-align: middle;
   min-height: 8em;  // This should be the maximun height (number of lines) 140 chars will wrap to in our sizes
