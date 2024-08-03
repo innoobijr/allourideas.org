@@ -3,9 +3,9 @@ en:
    # Common text elements across the application
    and: and
    votes_on: votes on
-   X_votes_on_Y_practices: "%{1}%{votes_count}%{_1} votes on %{2}%{practices_count}%{_2} practices"
+   X_votes_on_Y_ideas: "%{1}%{votes_count}%{_1} votes on %{2}%{ideas_count}%{_2} practices"
    items: practices
-   practices: practices
+   ideas: practices
    idea: practice
    photo: photo
    active: active
@@ -35,7 +35,7 @@ en:
     view_results: View Results
     about_this_page: About this page
     manage_question: Manage this page
-    see_all_practices: See more...
+    see_all_ideas: See more...
     feedback: Feedback
     make_your_own: Create Your Own Question
     view_idea: View Practice
@@ -89,7 +89,7 @@ en:
       if_you_want_to_activate: "If you want others to be able to vote on this %{object_type}, please activate it by visiting the following url:"
       if_you_dont_want: If you do not want others to vote on this %{object_type}, no action is required.
       if_you_want: If you want others to see this %{object}, no action is required.
-      existing_similar_practices: "You should note that this idea is identical to other active practices already in your wiki survey:"
+      existing_similar_ideas: "You should note that this idea is identical to other active practices already in your wiki survey:"
       see_current_results: "To see current results, or to vote further, you may want to visit the wiki survey that you created: "
       see_current_results_photocracy: "To see current results, or to vote further, visit: "
       we_auto_activated_idea: "Based on your settings, we have auto-activated the %{object} so that it may be seen and voted upon immediately.  If for whatever reason you need to de-activate this %{object}, go to the following url:"
@@ -218,30 +218,30 @@ en:
        adjective_8: awesome
        adjective_9: wow
   results:
-    scores_of_uploaded_and_orginal_practices: Scores of Uploaded Practices and Original Practices
+    scores_of_uploaded_and_orginal_ideas: Scores of Uploaded Practices and Original Practices
     number_of_user_sessions: Number of User Sessions
     number_of_user_sessions_per_day: Number of User Sessions per day
-    number_of_practices: Number of practices
-    number_of_practices_per_day: Number of practices per day
+    number_of_ideas: Number of practices
+    number_of_ideas_per_day: Number of practices per day
     date: Date
     number_of_votes_per_day: Number of Votes per day
     data_visualizations: Data Visualizations
     world_map_title: World map of all votes
-    world_map_practices_title: World map of all uploaded practices
+    world_map_ideas_title: World map of all uploaded practices
     world_map_creators: World map of all wiki survey creators
     votes_over_time_title: Number of votes over time
-    user_practices_over_time_title: Number of submitted practices over time
+    user_ideas_over_time_title: Number of submitted practices over time
     user_sessions_over_time_title: Number of unique user sessions per day
-    word_cloud_practices_title: Word cloud of practices
+    word_cloud_ideas_title: Word cloud of practices
     word_cloud_weighted_title: Word cloud of practices weighted by score
     word_cloud_uploaded_title: Word cloud of uploaded practices
     word_cloud_uploaded_weighted_title: Word cloud of uploaded practices weighted by score
     about_word_cloud: About word clouds
     word_cloud_exp: The word clouds displayed on this page are a visual depiction of the words that most frequently appear in this wiki survey. When weighted by score, the generated word cloud will use the current score of an idea to determine the popularity of the word. Note that some common or infrequent words may be filtered out of the generated word cloud.
-    scatter_practices_title: Compare uploaded practices with original practices
-    scatter_practices_subtitle: Roll over each point to learn more
-    uploaded_practices: Uploaded Practices
-    original_practices: Original Practices
+    scatter_ideas_title: Compare uploaded practices with original practices
+    scatter_ideas_subtitle: Roll over each point to learn more
+    uploaded_ideas: Uploaded Practices
+    original_ideas: Original Practices
     scores_of: Scores of
     view_link: "[View]"
     close_link: "[Close]"
@@ -270,8 +270,8 @@ en:
     contact_exp_widget: Send us an email at info@allourpractices.org.
     how_many_votes_q: How many votes can I cast? When does it end?
     how_many_votes_exp: You can vote as little or as much as you want, and you can stop voting at any time.
-    how_many_practices_q: How many practices can I add? What happens to my idea once I add it?
-    how_many_practices_exp: You can add as many practices as you have. Once an idea is added, it may be reviewed by the person who created the wiki survey in order to ensure that it is not inappropriate. Once the idea has been reviewed, it will start appearing for people to vote on it.
+    how_many_ideas_q: How many practices can I add? What happens to my idea once I add it?
+    how_many_ideas_exp: You can add as many practices as you have. Once an idea is added, it may be reviewed by the person who created the wiki survey in order to ensure that it is not inappropriate. Once the idea has been reviewed, it will start appearing for people to vote on it.
     view_results_q: Can I see what everyone else thinks? 
     view_results_exp: Yes, simply click on “View Results” from the voting screen. This process is completely transparent.
     make_my_own_q: This is neat. Can I make one of these myself?
@@ -284,8 +284,8 @@ en:
     wiki_survey_verification_succeeded: Thanks for verifying your email address. Your wiki survey ready!
     wiki_survey_verification_failed: Whoops, that wasn't the proper verification code. Be sure you're visiting the URL included in your email.
     hide_results_from_visitors: Hide results from visitors.
-    user_practices: User Ideas
-    active_user_practices: Active User Ideas 
+    user_ideas: User Ideas
+    active_user_ideas: Active User Ideas 
     num_votes: Votes
     num_votes_today: "Votes (Today)"
     created: Created
@@ -311,7 +311,7 @@ en:
     allow_flag_as_inappropriate_exp: This setting will allow users to flag practices as inappropriate or offtopic. After a user submits a flag request, the idea will be automatically deactivated and an email will be sent to the owner of the wiki survey. The email will contain whatever explanation the user provided along with the option to quickly re-activate an idea.
     default_lang_exp: Change the default language of the voting page interface
     download_idea_marketplace_data: Download Wiki Survey Data
-    list_of_practices_csv: List of Ideas (CSV File)
+    list_of_ideas_csv: List of Ideas (CSV File)
     list_of_votes_csv: List of Votes (CSV File)
     list_of_non_votes_csv: List of Non Vote Actions (CSV File)
     download: Download
@@ -346,7 +346,7 @@ en:
      test_showmespace:
         make_your_choice: Make your choice and see what comes next
         please_click: Please click on your choice
-     test_practicesubmit:
+     test_ideasubmit:
         make_your_voice_heard: "Make your voice heard"
         help_your_community: "Help your community"
      test_stackoverflow:
