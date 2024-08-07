@@ -1048,6 +1048,13 @@ class QuestionsController < ApplicationController
   def new
     @errors ||= []
     @question = Question.new
+    
+    unless (current_user.admin?)
+      logger.info("Current user is: #{current_user.inspect}")
+      flash[:notice] = t('user.not_authorized_error_results') #TODO: set the correct error here
+      redirect_to( "/") and return
+    end
+
 
     respond_to do |format|
       format.html # new.html.erb
