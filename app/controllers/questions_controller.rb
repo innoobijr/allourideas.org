@@ -1051,7 +1051,7 @@ class QuestionsController < ApplicationController
     
     unless (current_user.admin?)
       logger.info("Current user is: #{current_user.inspect}")
-      flash[:notice] = t('user.not_authorized_error_results') #TODO: set the correct error here
+      flash[:notice] = t('user.not_authorized_to_create_error')
       redirect_to( "/") and return
     end
 

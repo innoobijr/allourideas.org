@@ -112,6 +112,7 @@ en:
     choose_password_below: Your password has been reset. Choose a new password below.
     deny_access_error: You must be logged in to perform this action
     not_authorized_error: You do not have permission to modify this wiki survey.
+    not_authorized_to_create_error: You do not have the permission to create a survey.
     not_authorized_error_results: The results from this wiki survey are only visible to the person who created it.
   questions:
     new:
@@ -258,7 +259,7 @@ en:
   about:
     about: About this project
     contact: Contact Us
-    current_contributors: Current Collaborators
+    current_contributors: Investigators
     past_contributors: Past Collaborators
   about_page: 
     intro: You are participating in an “wiki survey” that enables groups to collect and prioritize practices in a democratic, open, and efficient process. By combining a simple voting process with open uploading of practices, the best practices in your group will bubble to the top. 

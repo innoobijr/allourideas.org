@@ -8,7 +8,7 @@
     %meta{:property => "og:description", :content => t('home.whats_this_txt')}
     %meta{:property => 'og:image', :content => "#{request.protocol}#{request.host_with_port}" + image_path('favicon.png')}
     %meta{:name => "viewport",  :content => "width=device-width, initial-scale=1.0"}
-    <meta property="og:site_name" content="All Our Ideas"/>
+    <meta property="og:site_name" content="UW Spoons"/>
     %link{:rel => "shortcut icon", :href => "#{request.protocol}#{request.host_with_port}/favicon.ico"}
     %title= t('common.title')
     = stylesheet_link_tag 'glyphicon', 'flexslider/flexslider.css', 'styles', 'screen'
@@ -63,7 +63,7 @@
           %span.icon-bar
           %span.icon-bar
         - if show_aoi_nav?
-          %a.brand{:href => '/'}= image_tag('logo_head.png', :alt => "All Our Ideas")
+          %a.brand{:href => '/'}= image_tag('logo_head.png', :alt => "UW Spoons")
         .nav-collapse.collapse
           - if show_aoi_nav?
             %ul.nav
@@ -73,7 +73,7 @@
               //  = link_to(t('nav.create'), new_question_path)
               %li{:class => current_page?(about_path) ? 'active' : nil}
                 = link_to(t('nav.about'), about_path)
-              %li= link_to(t('nav.blog'), "http://blog.allourideas.org")
+              //%li= link_to(t('nav.blog'), "http://blog.allourideas.org")
           %ul.nav.pull-right
             - if signed_in?
               %li.dropdown
