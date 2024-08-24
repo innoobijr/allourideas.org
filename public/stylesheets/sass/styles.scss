@@ -57,6 +57,12 @@ h2{
   }
 }
 
+div.label {
+  width: 98%;
+  margin-bottom: 10px;
+  background-color: #F2F2F2;
+}
+
 .pagination {
   @media (max-width: 767px) {
     ul li.current {
