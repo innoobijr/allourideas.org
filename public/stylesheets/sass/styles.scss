@@ -227,6 +227,28 @@ form#new_question_form{
   
 }
 
+.btn-vote-primary {
+  color: #4C3284;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #4C3284;
+  background-image: -moz-linear-gradient(top, #fff, #fff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff));
+  background-image: -webkit-linear-gradient(top, #fff, #fff);
+  background-image: -o-linear-gradient(top, #fff, #fff);
+  background-image: linear-gradient(to bottom, #fff,#fff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#4C3284', GradientType=0);
+  border-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+
+.btn-vote-primary:hover, .btn-vote-primary:focus, .btn-vote-primary:active, .btn-vote-primary.active, .btn-vote-primary.disabled, .btn-vote-primary[disabled] {
+  color: #4C3284;
+  background-color: #fff;
+}
+
+
 
 // -------------------------------
 //  'Cant decide' button and modal

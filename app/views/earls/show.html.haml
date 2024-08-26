@@ -30,20 +30,20 @@
   %ul.votebox.answers.row-fluid.unstyled
     %li.span5.offset1.leftside
       %div.row-fluid.label
-        %div.span4
-          %p.function Identitfy
-        %div.span8
+        %div.span3
+          %p.function Identity
+        %div.span9
           %p.category Asset Management
       %div.intro-popover{"data-title" => "Users can vote by clicking one of these options", "data-trigger" => "manual", "data-placement" => "bottom"}
         = render(:partial => 'questions/idea', :locals => {:data => @left_choice_text, :side => "leftside", :choice_id => @left_choice_id})
       -if @earl.flag_enabled?
         %p.flag= link_to(t('vote.flag_as_inappropriate'), "#flag_inappropriate", :id => 'left_flag', :class=> 'flag_link', :"data-toggle" => 'modal')
     %li.span5.rightside
-      %div.row-flow.label
-        %div.span4
+      %div.row-fluid.label
+        %div.span3
           %p.function Protect
-        %div.span8
-          %p.category Identity Management, Authentication, and Access Control
+        %div.span9
+          %p.category Identity and Access Control
       %div.intro-popover{"data-title" => "Users can vote by clicking one of these options", "data-trigger" => "manual", "data-placement" => "bottom"}
         = render(:partial => 'questions/idea', :locals => {:data => @right_choice_text, :side => "rightside", :choice_id => @right_choice_id})
       -if @earl.flag_enabled?

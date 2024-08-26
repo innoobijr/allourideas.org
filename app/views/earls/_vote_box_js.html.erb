@@ -98,7 +98,7 @@
       var newRight = newRightDiv.find('.btn-vote-idea');
       var bothNew = newLeft.add(newRight);
 
-      bothNew.addClass('btn-primary').removeClass('btn-success');
+      bothNew.addClass('btn-vote-primary').removeClass('btn-success');
 
       newLeft.html(data.newleft);
       newRight.html(data.newright);
@@ -132,14 +132,14 @@
 
       var winningLink = $(event.currentTarget);
       // return early if disabled or not btn-primary
-      if (!winningLink.not('.disabled').is('.btn-primary')) {
+      if (!winningLink.not('.disabled').is('.btn-vote-primary')) {
         return;
       }
       var losingLink  = winningLink.closest('.votebox').find('.btn-vote-idea').not(winningLink);
       var winningSide = winningLink.data('side').replace('side', '');
 
-      winningLink.removeClass('btn-primary').addClass('btn-success').addClass('disabled');
-      losingLink.removeClass('btn-primary').addClass('disabled');
+      winningLink.removeClass('btn-vote-primary').addClass('btn-success').addClass('disabled');
+      losingLink.removeClass('btn-vote-primary').addClass('disabled');
 
       var currentTime = new Date();
       var time_viewed = currentTime - loadedTime
@@ -165,8 +165,8 @@
           'direction' : winningSide
         },
         error: function(request,error) {
-          winningLink.addClass('btn-primary').removeClass('btn-success').removeClass('disabled');
-          losingLink.addClass('btn-primary').removeClass('disabled');
+          winningLink.addClass('btn-vote-primary').removeClass('btn-success').removeClass('disabled');
+          losingLink.addClass('btn-vote-primary').removeClass('disabled');
           showAjaxError(request, error);
           loadedTime = new Date(); //reset loaded time
         },
